@@ -8,10 +8,10 @@ namespace Morpion
 {
     internal class Player
     {
-      
-        public Player()
+        public int Number { get; set; }
+        public Player(int number)
         {
-        
+            Number = number;
         }
     }
 }
