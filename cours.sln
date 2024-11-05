@@ -14,6 +14,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "�
 		sonar-project.properties = sonar-project.properties
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{86432316-5D4C-4DD7-8448-C74ECA9DB223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{BD8F6D51-FDCD-492E-AAE6-036144E36183}"
+	ProjectSection(SolutionItems) = preProject
+		ci.yml = ci.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +38,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86432316-5D4C-4DD7-8448-C74ECA9DB223} = {C26C96C3-55F4-4923-8C5E-C6184F5E7FA5}
+		{BD8F6D51-FDCD-492E-AAE6-036144E36183} = {86432316-5D4C-4DD7-8448-C74ECA9DB223}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C242355E-9920-4CE6-A5FC-19B0A8FEC586}
