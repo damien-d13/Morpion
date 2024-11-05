@@ -51,4 +51,4 @@ jobs:
       - name: Complete SonarCloud analysis
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: dotnet-sonarscanner end
+        run: dotnet-sonarscanner end -Dsonar.projectBaseDir="${{ github.workspace }}"
