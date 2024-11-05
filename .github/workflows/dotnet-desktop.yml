@@ -36,6 +36,9 @@ jobs:
           name: code-coverage
           path: '**/TestResults/*.coverage' # Utilisé pour récupérer le fichier de couverture
 
+      - name: Install dotnet-sonarscanner
+        run: dotnet tool install --global dotnet-sonarscanner
+
       - name: Prepare SonarCloud analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
